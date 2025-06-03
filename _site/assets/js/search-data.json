@@ -1,0 +1,110 @@
+{"0": {
+    "doc": "Community Bonding Period",
+    "title": "Community Bonding Period",
+    "content": "May 8 – June 1 . | GSoC 2025 accepted Contributors announced and my GSoC proposal Make Debian for Raspberry Pi Build Again accepted. | Community Bonding period begined and had a face-to-face talk over Jitsi with mentor Gunnar Wolf and also stayed in touch through Telegram DMs. | Created this project web page. | [Pkg-raspi-maintainers] Request: Debian Raspberry Pi Team membership | Attended GSoC Contributor Welcome Session - Wednesday, May 14th | Familiarized with vmdb2 documentation, Debian ARM architecture ports and debian-installer tools. | Understood what differs between Raspberry Pi families, looked at Cyril Brulebois generate-recipe (in the repo Raspberry Pi image specs). | Filed a bug report to see support for Raspberry Pi 4 Model B (#1106381) | Prepared test hardware environment and tested existing daily auto-built images on Raspberry Pi 0 &amp; 4 and also setuped a Debian unstable environment with schroot and sbuild for Debian packaging. | Reached out to mentor to get access to the raspi.debian.net existing build infrastructure and tried initially setting up on my local machine to get familiar with it and then to start migrating it to Debian infrastructure and also fixed build errors and warnings caused by Ruby version upgrades and deprecated methods, which prevented the website from building on unstable. | I already have Raspberry Pi zero 2w, 4 and 5 devices and DPL approved amount to buy the rest hardware. I sent mentor the actual prices close to my home of the most convienient seller. | . Merge Requests . | MR | Status | . | Boot Media (Software Image): Flashing Instructions using Raspberry Pi Imager (MR #21) | Pending | . | Add: Support for Raspberry Pi 4 Model B (MR #71) | Pending | . | Fix: build errors and Ruby 3.3+ compatibility issues (MR #22) | Accepted | . | RaspberryPi: enable repository for trixie (MR #361) | Accepted | . Ending Thoughts . That’s all for the Community Bonding Period! Hopefully, this weekly progress logs keeps everyone updated on my progress and attract potential contributors. Moreover, I’m organizing my daily life for this new exciting period. Misc 😉 . LinkedIn Post May 28, 2025 This summer, I'm excited to start contributing and developing with this great community. Looking forward to new connections and learning opportunities :) ",
+    "url": "http://localhost:4000/docs/weeklyprogress/Community%20Bonding%20Period/#community-bonding-period",
+    "relUrl": "/docs/weeklyprogress/Community%20Bonding%20Period/#community-bonding-period"
+  },"1": {
+    "doc": "Community Bonding Period",
+    "title": "Community Bonding Period",
+    "content": ". ",
+    "url": "http://localhost:4000/docs/weeklyprogress/Community%20Bonding%20Period/",
+    "relUrl": "/docs/weeklyprogress/Community%20Bonding%20Period/"
+  },"2": {
+    "doc": "Git Repositories",
+    "title": "Git Repositories",
+    "content": "Common software that is on or used in this project. ",
+    "url": "http://localhost:4000/docs/documentation/git-repositories/#git-repositories",
+    "relUrl": "/docs/documentation/git-repositories/#git-repositories"
+  },"3": {
+    "doc": "Git Repositories",
+    "title": "Git Repositories",
+    "content": ". ",
+    "url": "http://localhost:4000/docs/documentation/git-repositories/",
+    "relUrl": "/docs/documentation/git-repositories/"
+  },"4": {
+    "doc": "Hardware",
+    "title": "Hardware",
+    "content": "Tracking page for hardware that purchased and lent for development and testing. ",
+    "url": "http://localhost:4000/docs/documentation/hardware/#hardware",
+    "relUrl": "/docs/documentation/hardware/#hardware"
+  },"5": {
+    "doc": "Hardware",
+    "title": "Hardware",
+    "content": ". ",
+    "url": "http://localhost:4000/docs/documentation/hardware/",
+    "relUrl": "/docs/documentation/hardware/"
+  },"6": {
+    "doc": "How-To Guides",
+    "title": "Table of Contents",
+    "content": ". | ARM Cross-Compilation on Debian x86 Machine | . Quick-wiki: ARM Cross-Compilation on Debian x86 Machine . The latest versions of DebianDebian has excellent support for cross-building through Debian Cross-toolchains ( see wiki: https://wiki.debian.org/ToolChain/Cross ). Toolchains are set of software development tools and libraries (such as gcc , gdb , glibc ) that are chained together to enable you to build executable code on one operating system on one type of machine, such as a 64-bit Linux OS on an Intel x86 machine, but to execute them on a different operating system and/or a different architecture, such as a 32-bit Linux OS on an ARM device. Debian cross toolchain is a good starting point. We can list the available toolchains as follows: . prashanth@krv:~$ apt-cache search cross-build-essential crossbuild-essential-amd64 - Informational list of cross-build-essential packages crossbuild-essential-arm64 - Informational list of cross-build-essential packages crossbuild-essential-armel - Informational list of cross-build-essential packages crossbuild-essential-armhf - Informational list of cross-build-essential packages crossbuild-essential-i386 - Informational list of cross-build-essential packages crossbuild-essential-powerpc - Informational list of cross-build-essential packages crossbuild-essential-ppc64el - Informational list of cross-build-essential packages crossbuild-essential-s390x - Informational list of cross-build-essential packages crossbuild-essential-mips - Informational list of cross-build-essential packages crossbuild-essential-mips64 - Informational list of cross-build-essential packages crossbuild-essential-mips64el - Informational list of cross-build-essential packages crossbuild-essential-mips64r6 - Informational list of cross-build-essential packages crossbuild-essential-mips64r6el - Informational list of cross-build-essential packages crossbuild-essential-mipsel - Informational list of cross-build-essential packages crossbuild-essential-mipsr6 - Informational list of cross-build-essential packages crossbuild-essential-mipsr6el - Informational list of cross-build-essential packages . The main purpose of these packages is to allow cross-compiling of Linux programs for different architecture distributions, but these can be used also for bare metal programming. One thing to be aware is the fact that the compiler by default tries to link the Linux standard C libraries that in bare metal programming have no use. Here, I’m using ARM hard float ( armhf ) package for writing programs that is deployed to the Beagle boards. prashanth@krv:~$ sudo apt install crossbuild-essential-armhf Preparing to unpack .../crossbuild-essential-armhf_12.9_all.deb ... Unpacking crossbuild-essential-armhf (12.9) ... Setting up crossbuild-essential-armhf (12.9) ... Test installation by calling the compiler directly. prashanth@krv:~$ arm-linux-gnueabihf-g++ -v COLLECT_GCC=arm-linux-gnueabihf-g++ Thread model: posix gcc version 10.2.1 20210110 (Debian 10.2.1-6) . I’m writing a short C++ program, testcross.cpp , which can be compiled into binary code using the cross-compiler. prashanth@krv:~$ gedit testcross.cpp prashanth@krv:~$ more testcross.cpp #include&lt;iostream&gt; using namespace std; int main(){ cout &lt;&lt; \"Testing cross compilation for armhf\" &lt;&lt; endl; return 0; } prashanth@krv:~$ arm-linux-gnueabihf-g++ testcross.cpp -o testcross prashanth@krv:~$ ls -l testcross* -rwxr-xr-x 1 prashanth prashanth 9064 Apr 5 13:02 testcross -rw-r--r-- 1 prashanth prashanth 119 Apr 5 13:00 testcross.cpp . The binary file has an executable flag, but when the binary is invoked, it fails to execute. This is unsurprising, as we are attempting to execute ARM binary instructions on an Intel x86 machine. prashanth@krv:~$ ./testcross arm-binfmt-P: Could not open '/lib/ld-linux-armhf.so.3': No such file or directory . This error indicates that the ld-linux-armhf.so.3 file is not in the system library directory. A search of the filesystem locates it in the /usr/arm-linux-gnueabihf/lib/ directory. prashanth@krv:~$ stat /usr/arm-linux-gnueabihf/lib/ld-linux-armhf.so.3 File: /usr/arm-linux-gnueabihf/lib/ld-linux-armhf.so.3 -&gt; ld-2.31.so Size: 10 Blocks: 0 IO Block: 4096 symbolic link Device: b302h/45826d Inode: 1447823 Links: 1 Access: (0777/lrwxrwxrwx) Uid: ( 0/ root) Gid: ( 0/ root) Access: 2022-04-05 13:02:21.727259593 +0530 Modify: 2021-03-03 17:24:20.000000000 +0530 Change: 2022-03-29 20:49:01.659052574 +0530 Birth: 2022-03-29 20:49:01.631052872 +0530 . One approach to solve this issue is to explicitly call the QEMU tool and specify the library directory, whereupon the program is emulated correctly. prashanth@krv:~$ qemu-arm-static -L /usr/arm-linux-gnueabihf/ testcross Testing cross compilation for armhf . Success! If we see this output, then we are able to build a binary on the x86 machine that can be executed directly on the ARM machine. ",
+    "url": "http://localhost:4000/docs/documentation/how-to-guides/#table-of-contents",
+    "relUrl": "/docs/documentation/how-to-guides/#table-of-contents"
+  },"7": {
+    "doc": "How-To Guides",
+    "title": "How-To Guides",
+    "content": ". ",
+    "url": "http://localhost:4000/docs/documentation/how-to-guides/",
+    "relUrl": "/docs/documentation/how-to-guides/"
+  },"8": {
+    "doc": "Weekly Progress",
+    "title": "Weekly Progress",
+    "content": "These are the logs of my project, where I provide weekly report on the work done. ",
+    "url": "http://localhost:4000/docs/weeklyprogress/",
+    "relUrl": "/docs/weeklyprogress/"
+  },"9": {
+    "doc": "Documentation",
+    "title": "Documentation",
+    "content": ". This documentation is about the new learning(s) and issue(s) resolvings on different aspects of project, and personal thoughts. It includes(or/with links): Personal Public thoughts, Artciles, Research in building embedded Linux systems(&amp; resources), Programming(issues and code), Advanced Linux commands, bash script command utilization, Linux packages(&amp; scripts), Embedded Systems, text documentation, images, tutorial(links) and git links(Personal Pubic repository links). Note : This documentation is mainly intend to reduce time consumption for solving some issues which are already solved/used earlier, This is from my past experience of wasting my time for searching for issues solving and code shown/contributed/used are somtimes exculsively with Debian GNU/Linux and may not work with other Debian based systems or other Linux distributions. ",
+    "url": "http://localhost:4000/docs/documentation/",
+    "relUrl": "/docs/documentation/"
+  },"10": {
+    "doc": "Home",
+    "title": "Make Debian for Raspberry Pi Build Again",
+    "content": " ",
+    "url": "http://localhost:4000/#make-debian-for-raspberry-pi-build-again",
+    "relUrl": "/#make-debian-for-raspberry-pi-build-again"
+  },"11": {
+    "doc": "Home",
+    "title": "GSoC’2025 | Debian",
+    "content": ". ",
+    "url": "http://localhost:4000/#gsoc2025--debian",
+    "relUrl": "/#gsoc2025--debian"
+  },"12": {
+    "doc": "Home",
+    "title": "About",
+    "content": ". | Student Name: Kurva Prashanth | Mentor: Gunnar Wolf | GSoC Entry link: Program Project Page | wiki.debian.org: Make Debian for Raspberry Pi Build Again | Debian Salsa: https://salsa.debian.org/krvprashanth | . ",
+    "url": "http://localhost:4000/#about",
+    "relUrl": "/#about"
+  },"13": {
+    "doc": "Home",
+    "title": "Home",
+    "content": " ",
+    "url": "http://localhost:4000/",
+    "relUrl": "/"
+  },"14": {
+    "doc": "Project Notes",
+    "title": "Table of Contents",
+    "content": ". | Raspberry Pi Image Build Process with Debian Raspberry Pi Maintainers / Raspberry Pi image specs | . ",
+    "url": "http://localhost:4000/docs/documentation/project-notes/#table-of-contents",
+    "relUrl": "/docs/documentation/project-notes/#table-of-contents"
+  },"15": {
+    "doc": "Project Notes",
+    "title": "Project Notes",
+    "content": ". ",
+    "url": "http://localhost:4000/docs/documentation/project-notes/",
+    "relUrl": "/docs/documentation/project-notes/"
+  },"16": {
+    "doc": "Related Work",
+    "title": "Related Work",
+    "content": "This page gathers several links of related resources. There has been a substantial amount of work on Raspberry Pi Image builds. | https://gwolf.org/2015/06/almost-free-some-experiences-with-the-raspberry-pi-ci20-bananapi-cubox-i-and-whatever-will-follow.html | https://gwolf.org/2018/12/new-release-of-the-raspberry-pi-3-unofficial-debian-preview-image.html | https://gwolf.org/2019/02/raspberry-pi-3-debian-buster-unofficial-preview-image-update.html | https://gwolf.org/2019/06/updates-from-raspberrypi-land.html | Gunnar Wolf, Debian on the Raspberryscape. Presented at DebConf19, Curitiba, Brazil. | https://debamax.com/blog/2019/09/09/adding-raspberry-pi-cm3-support-to-debian-buster/ | https://gwolf.org/2020/04/fresh-daily-built-debian-images-for-your-raspberries-finally.html | https://gwolf.org/2020/07/raspberry-pi-4-now-running-your-favorite-distribution.html | https://gwolf.org/2020/09/rpi-4-8gb-finally-usb-functional.html | https://gwolf.org/2021/10/raspi-debian-org-now-hosted-on-debian-infrastructure.html | https://gwolf.org/2021/11/for-our-millionth-bug-bookworms-eat-raspberries-alive.html | https://gwolf.org/2022/04/how-is-the-free-firmware-for-the-raspberry-progressing.html | https://gwolf.org/2023/08/interested-in-adopting-the-rpi-images-for-debian.html | . ",
+    "url": "http://localhost:4000/docs/documentation/related-work/#related-work",
+    "relUrl": "/docs/documentation/related-work/#related-work"
+  },"17": {
+    "doc": "Related Work",
+    "title": "Related Work",
+    "content": ". ",
+    "url": "http://localhost:4000/docs/documentation/related-work/",
+    "relUrl": "/docs/documentation/related-work/"
+  }
+}
