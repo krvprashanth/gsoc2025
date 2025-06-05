@@ -73,7 +73,7 @@
   },"12": {
     "doc": "Home",
     "title": "About",
-    "content": ". | Student Name: Kurva Prashanth | Mentor: Gunnar Wolf | GSoC Entry link: Program Project Page | wiki.debian.org: Make Debian for Raspberry Pi Build Again | Debian Salsa: https://salsa.debian.org/krvprashanth | . ",
+    "content": ". | Organization: Debian | GSoC contributor: Kurva Prashanth | Mentor: Gunnar Wolf | GSoC Entry link: Program Project Page | wiki.debian.org: Make Debian for Raspberry Pi Build Again | Debian Salsa: https://salsa.debian.org/krvprashanth | . ",
     "url": "http://localhost:4000/#about",
     "relUrl": "/#about"
   },"13": {
