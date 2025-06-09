@@ -8,7 +8,9 @@ nav_order: 3
 # Week 1
 June 2 – June 8
 
-<img src="/assets/images/setup.png" alt="Setup Image" />
+---
+
+![](assets/images/setup.png)
 
 ---
 
