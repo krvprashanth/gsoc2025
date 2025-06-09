@@ -85,7 +85,7 @@
   },"14": {
     "doc": "Project Notes",
     "title": "Table of Contents",
-    "content": ". | Raspberry Pi Image Build Process with Debian Raspberry Pi Maintainers / Raspberry Pi image specs | . ",
+    "content": ". | Raspberry Pi Image Build Process with Debian Raspberry Pi Maintainers / Raspberry Pi image specs | Debian Multiarch | . ",
     "url": "http://localhost:4000/docs/documentation/project-notes/#table-of-contents",
     "relUrl": "/docs/documentation/project-notes/#table-of-contents"
   },"15": {
@@ -106,5 +106,17 @@
     "content": ". ",
     "url": "http://localhost:4000/docs/documentation/related-work/",
     "relUrl": "/docs/documentation/related-work/"
+  },"18": {
+    "doc": "Week 1",
+    "title": "Week 1",
+    "content": "June 2 – June 8 . | I have started writing project progress blog posts to Debian Outreach Team pages and added entry for Debian Outreach Team pages to Debian Planet as most of the community is unaware of the work GSoC Contributors/Interns doing and also I will be writing Bi-Weekly reports which can be published in Debian Planet will have wide reach. | Tested U-Boot package: u-boot-rpi (2023.01+dfsg-2+deb12u1) current version stable/bookworm on Raspberry Pi Zero 2 W &amp; 4 Model B . | Created a bootable SD Card with u-boot-rpi, raspi-firmware used Debian’s multiarch functionality to install the u-boot-rpi:arm64 package on a amd64 system and copied the appropriate u-boot image and edited config.txt to match. | . | Commit bb6c5faa Fix: machine entries ordering in db/all.db to pass sort check | Tested flash-kernel on a Raspberry Pi Zero 2 W Rev 1.0 running Bookworm / Raspberry Pi family 3 tested Image. | Filed a bug report to see support for Raspberry Pi Zero 2 W (#1107524) | . Merge Requests . | opened !73: Add: Support for Raspberry Pi Zero 2 W | opened and merged !48: Add: config for Debian Outreach Team Pages | opened !5: Fix: Jekyll build and HTML-Proofer errors | opened !6: GSoC2025: Introduction blog post | . Ending Thoughts . That’s all for the week! Hopefully, this weekly progress logs keeps everyone updated on my progress and attract potential contributors. Helpful Links . | https://wiki.debian.org/U-boot/Status | https://wiki.debian.org/Multiarch/HOWTO | https://manpages.debian.org/bookworm/flash-kernel/flash-kernel.8.en.html | https://manpages.debian.org/bookworm/u-boot-tools/mkimage.1.en.html | https://manpages.debian.org/bookworm/u-boot-menu/u-boot-update.8.en.html | . ",
+    "url": "http://localhost:4000/docs/weeklyprogress/week1/#week-1",
+    "relUrl": "/docs/weeklyprogress/week1/#week-1"
+  },"19": {
+    "doc": "Week 1",
+    "title": "Week 1",
+    "content": ". ",
+    "url": "http://localhost:4000/docs/weeklyprogress/week1/",
+    "relUrl": "/docs/weeklyprogress/week1/"
   }
 }
