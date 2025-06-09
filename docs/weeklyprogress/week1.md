@@ -13,7 +13,6 @@ June 2 – June 8
      
 <div style="display: flex; gap: 5px;">
   <img src="/assets/images/setup.jpg" alt="Setup" style="width: 100%;">
-  <img src="/assets/images/raspis.jpg" alt="Raspis" style="width: 50%;">
  </div>
 
 - I have started writing project progress blog posts to [Debian Outreach Team pages](https://outreach-team.pages.debian.net/) and added entry for Debian Outreach Team pages to [Debian Planet](https://planet.debian.org/) as most of the community is unaware of the work GSoC Contributors/Interns doing and also I will be writing Bi-Weekly reports which can be published in Debian Planet will have wide reach.
