@@ -10,7 +10,7 @@ June 2 – June 8
 
 ---
 
-![intro](assets/images/setup.jpg)
+![Setup](/assets/images/setup.jpg)
 
 - I have started writing project progress blog posts to [Debian Outreach Team pages](https://outreach-team.pages.debian.net/) and added entry for Debian Outreach Team pages to [Debian Planet](https://planet.debian.org/) as most of the community is unaware of the work GSoC Contributors/Interns doing and also I will be writing Bi-Weekly reports which can be published in Debian Planet will have wide reach.
 - Tested U-Boot package: u-boot-rpi (2023.01+dfsg-2+deb12u1) current version stable/bookworm on  Raspberry Pi Zero 2 W & 4 Model B
