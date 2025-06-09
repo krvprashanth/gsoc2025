@@ -10,7 +10,7 @@ June 2 – June 8
 
 ---
 
-<img src="../../assets/images/setup.png" alt="Setup Image" />
+![](/assets/images/setup.png)
 
 ---
 
