@@ -5,7 +5,7 @@ parent: Weekly Progress
 nav_order: 4
 ---
 ---
-# Week 1
+# Week 2
 June 9 – June 15
 
 ---
