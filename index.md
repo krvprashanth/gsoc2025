@@ -20,4 +20,5 @@ nav_order: 1
 
 ---
 
-
+### Blog Posts
+- Debian Outreach Team Pages - [GSoC 2025 Introduction: Make Debian for Raspberry Pi Build Again](https://outreach-team.pages.debian.net/gsoc/debian/raspberrypi/2025/06/03/gsoc-2025-introduction-make-debian-for-raspberrypi-again.html)
