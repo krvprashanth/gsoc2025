@@ -109,7 +109,7 @@
   },"18": {
     "doc": "Week 1",
     "title": "Week 1",
-    "content": "June 2 – June 8 . . | I have started writing project progress blog posts to Debian Outreach Team pages and added entry for Debian Outreach Team pages to Debian Planet as most of the community is unaware of the work GSoC Contributors/Interns doing and also I will be writing Bi-Weekly reports which can be published in Debian Planet will have wide reach. | Tested U-Boot package: u-boot-rpi (2023.01+dfsg-2+deb12u1) current version stable/bookworm on Raspberry Pi Zero 2 W &amp; 4 Model B . | Created a bootable SD Card with u-boot-rpi, raspi-firmware used Debian’s multiarch functionality to install the u-boot-rpi:arm64 package on a amd64 system and copied the appropriate u-boot image and edited config.txt to match. | . | Commit bb6c5faa Fix: machine entries ordering in db/all.db to pass sort check | Tested flash-kernel on a Raspberry Pi Zero 2 W Rev 1.0 running Bookworm / Raspberry Pi family 3 tested Image. | Filed a bug report to see support for Raspberry Pi Zero 2 W (#1107524) | . Merge Requests . | opened !73: Add: Support for Raspberry Pi Zero 2 W | opened and merged !48: Add: config for Debian Outreach Team Pages | opened !5: Fix: Jekyll build and HTML-Proofer errors | opened !6: GSoC2025: Introduction blog post | . Ending Thoughts . That’s all for the week! Hopefully, this weekly progress logs keeps everyone updated on my progress and attract potential contributors. Helpful Links . | https://wiki.debian.org/U-boot/Status | https://wiki.debian.org/Multiarch/HOWTO | https://manpages.debian.org/bookworm/flash-kernel/flash-kernel.8.en.html | https://manpages.debian.org/bookworm/u-boot-tools/mkimage.1.en.html | https://manpages.debian.org/bookworm/u-boot-menu/u-boot-update.8.en.html | . ",
+    "content": "June 2 – June 8 . | I have started writing project progress blog posts to Debian Outreach Team pages and added entry for Debian Outreach Team pages to Debian Planet as most of the community is unaware of the work GSoC Contributors/Interns doing and also I will be writing Bi-Weekly reports which can be published in Debian Planet will have wide reach. | Tested U-Boot package: u-boot-rpi (2023.01+dfsg-2+deb12u1) current version stable/bookworm on Raspberry Pi Zero 2 W &amp; 4 Model B . | Created a bootable SD Card with u-boot-rpi, raspi-firmware used Debian’s multiarch functionality to install the u-boot-rpi:arm64 package on a amd64 system and copied the appropriate u-boot image and edited config.txt to match. | . | Commit bb6c5faa Fix: machine entries ordering in db/all.db to pass sort check | Tested flash-kernel on a Raspberry Pi Zero 2 W Rev 1.0 running Bookworm / Raspberry Pi family 3 tested Image. | Filed a bug report to see support for Raspberry Pi Zero 2 W (#1107524) | . Merge Requests . | opened !73: Add: Support for Raspberry Pi Zero 2 W | opened and merged !48: Add: config for Debian Outreach Team Pages | opened !5: Fix: Jekyll build and HTML-Proofer errors | opened !6: GSoC2025: Introduction blog post | . Ending Thoughts . That’s all for the week! Hopefully, this weekly progress logs keeps everyone updated on my progress and attract potential contributors. Helpful Links . | https://wiki.debian.org/U-boot/Status | https://wiki.debian.org/Multiarch/HOWTO | https://manpages.debian.org/bookworm/flash-kernel/flash-kernel.8.en.html | https://manpages.debian.org/bookworm/u-boot-tools/mkimage.1.en.html | https://manpages.debian.org/bookworm/u-boot-menu/u-boot-update.8.en.html | . ",
     "url": "http://localhost:4000/docs/weeklyprogress/week1/#week-1",
     "relUrl": "/docs/weeklyprogress/week1/#week-1"
   },"19": {
@@ -120,15 +120,27 @@
     "relUrl": "/docs/weeklyprogress/week1/"
   },"20": {
     "doc": "Week 2",
-    "title": "Week 1",
+    "title": "Week 2",
     "content": "June 9 – June 15 . | Had meeting with mentor Gunnar Wolf on Monday, 9 June, 8:00 pm IST and shared the work done over the past week. | Replicated the current Raspberry Pi Debian build Infrastructure raspi.debian.net on my local machine built daily images and tested on hardware (RPi Zero 2W, 4B, CM4) and had a meet with mentor on Thursday, 12 June, 9:00 pm IST discussed further plan on migrating the current setup to Debian Infrastructure and up running daily images. | Raspberry Pi Debian Images Build Environment https://salsa.debian.org/krvprashanth/raspi-debian-build-env | Tested U-Boot package: u-boot-rpi (2023.01+dfsg-2+deb12u1) current version stable/bookworm on Raspberry Pi Compute Module 4. | Listed the boards I tested on https://wiki.debian.org/U-boot/Status | . | In the meet mentor mentioned about about the contributions of Cyril Brulebois (@kibi) and Vagrant Cascadian (@vagrant) have been doing around ARM development boards. Later, I ended up watching talks by Vagrant Cascadian, which helped me better understand how ARM development boards are supported in Debian. | https://debconf17.debconf.org/talks/116/ | Debian for Embedded Systems: Best Practices - Vagrant Cascadian, Aikidev, LLC | https://debconf19.debconf.org/talks/121-cat-herding-development-boards/ | https://debconf21.debconf.org/talks/88-two-pinebooks-walk-into-a-bar/ | . | . Ending Thoughts . That’s all for the week! Hopefully, this weekly progress logs keeps everyone updated on my progress and attract potential contributors. ",
-    "url": "http://localhost:4000/docs/weeklyprogress/week2/#week-1",
-    "relUrl": "/docs/weeklyprogress/week2/#week-1"
+    "url": "http://localhost:4000/docs/weeklyprogress/week2/#week-2",
+    "relUrl": "/docs/weeklyprogress/week2/#week-2"
   },"21": {
     "doc": "Week 2",
     "title": "Week 2",
     "content": ". ",
     "url": "http://localhost:4000/docs/weeklyprogress/week2/",
     "relUrl": "/docs/weeklyprogress/week2/"
+  },"22": {
+    "doc": "Week 3 & 4",
+    "title": "Week 3 &amp; 4",
+    "content": "June 16 – June 29 . | Created a Debian bookworm virtual machine using debvm to use as a test server on my local machine to test Ansible playbook to build Raspberry Pi Debian images. | Raspberry Pi Debian Images Build Farm https://salsa.debian.org/krvprashanth/raspi-debian-build-farm . | Commit 5cf4a9fc Refactor: move scripts to build_env; add inventory and playbook | . | Filed a bug report to see support for Raspberry Pi Compute Module 4 (#1108236) | Had meeting with mentor Gunnar Wolf on Monday, 26 June, 9:30 pm IST and shared the work done over the past week. | Tried building (initial workaround of armhf) architecture-specific Raspberry Pi Debian using vmdb2, flash-kernel, and u-boot. | https://salsa.debian.org/krvprashanth/raspi-arch-image-specs | . | . Merge Request . | opened !74: Add: machine db entry for Raspberry Pi Compute Module 4 | . Ending Thoughts . That’s all for the past two weeks! Hopefully, this bi-weekly progress log keeps everyone updated on my progress and helps attract potential contributors. Helpful Links . | https://dyn.manpages.debian.org/bookworm-backports/debvm/debefivm-create.1.en.html | . ",
+    "url": "http://localhost:4000/docs/weeklyprogress/week3-4/#week-3--4",
+    "relUrl": "/docs/weeklyprogress/week3-4/#week-3--4"
+  },"23": {
+    "doc": "Week 3 & 4",
+    "title": "Week 3 & 4",
+    "content": ". ",
+    "url": "http://localhost:4000/docs/weeklyprogress/week3-4/",
+    "relUrl": "/docs/weeklyprogress/week3-4/"
   }
 }
